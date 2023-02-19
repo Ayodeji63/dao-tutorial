@@ -2,14 +2,14 @@ require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 
 //* Default Template for Reference
-/*
+
 module.exports = {
   solidity: "0.8.9",
   defaultNetwork: "mumbai",
   networks: {
     mumbai: {
-      url: process.env.ALCHEMY_API_KEY_URL,
-      accounts: [process.env.WALLET_PRIVATE_KEY],
+      url: process.env.QUICKNODE_HTTP_URL,
+      accounts: [process.env.PRIVATE_KEY],
     },
   },
   etherscan: {
@@ -18,7 +18,6 @@ module.exports = {
     },
   },
 };
-*/
 
 // Configuration
 /*

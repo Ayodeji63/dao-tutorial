@@ -2,7 +2,7 @@
 pragma solidity ^0.8.9;
 
 contract FakeNFTMarketplace {
-    /// @dev Maintain a mapping of Fake TokenID to Owner addresses
+    /// @dev Maintain a mapping of Fake TokenId to Owner addresses
 
     mapping(uint256 => address) public tokens;
 
@@ -24,6 +24,7 @@ contract FakeNFTMarketplace {
 
     /// @dev available() checks whether the given tokenId has already been sold or not
     /// @param _tokenId - the tokenId to check for
+    /// @return it return a bool
     function available(uint256 _tokenId) external view returns (bool) {
         // address(0) = 0x000000000000000000000000000000000
         // This is the default value for addresses in Solidity
